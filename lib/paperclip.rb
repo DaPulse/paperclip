@@ -209,5 +209,6 @@ require 'paperclip/io_adapters/data_uri_adapter'
 require 'paperclip/io_adapters/nil_adapter'
 require 'paperclip/io_adapters/attachment_adapter'
 require 'paperclip/io_adapters/uploaded_file_adapter'
-require 'paperclip/io_adapters/uri_adapter'
-require 'paperclip/io_adapters/http_url_proxy_adapter'
+# Removed these two adapters as they fetch remote URLs on behalf of the user, this is a security risk (Daniel Mittelman, January 2019)
+#require 'paperclip/io_adapters/uri_adapter'
+#require 'paperclip/io_adapters/http_url_proxy_adapter'
